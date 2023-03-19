@@ -2,6 +2,7 @@ import React from "react";
 import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
 import boy from "../../img/boy.png";
+import Resume from '../Services/cv_lecongtien.pdf';
 import { Link } from "react-scroll";
 const navbar = () => {
   return (
@@ -43,9 +44,13 @@ const navbar = () => {
             </li>
           </ul>
         </div>
-        <Link to="contact" spy={true} smooth={true}>
+        {/* <Link to="contact" spy={true} smooth={true}>
         <button className="button n-button">Contact</button>
-        </Link>
+        
+        </Link> */}
+        <a href={Resume} download>
+          <button className="button n-button">Download CV</button>
+        </a>
       </div>
     </div>
   );
